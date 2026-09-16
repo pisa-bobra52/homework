@@ -1,0 +1,27 @@
+a = 42
+b = 3.14159
+c = "Hello, Python!"
+d = True
+e = [1, 2, 3]
+f = (4, 5, 6)
+g = {"name": "Alice", "age": 30}
+h = {7, 8, 9}
+i = None
+
+print("Переменная a:", a, "| тип:", type(a))
+
+print("Переменная b:", b, "| тип:", type(b))
+
+print("Переменная c:", c, "| тип:", type(c))
+
+print("Переменная d:", d, "| тип:", type(d))
+
+print("Переменная e:", e, "| тип:", type(e))
+
+print("Переменная f:", f, "| тип:", type(f))
+
+print("Переменная g:", g, "| тип:", type(g))
+
+print("Переменная h:", h, "| тип:", type(h))
+
+print("Переменная i:", i, "| тип:", type(i))
