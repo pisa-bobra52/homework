@@ -1,8 +1,8 @@
-students_count = 20                                          # int
-temperature = 42.5                                           # float
-login = "ivanov_ivan"                                        # str
-notification_on = True                                       # bool
-favorite_movies = ["Интерестеллар", "Человек-паук"]          # list
-point = (3, 7)                                               # tuple
-product_ids = {156, 228, 365, 228}                           # set (дубль уберётся)
-capitals = {"Россия": "Москва", "Лос-Анджелес": "Ница"}      # dict
+students_count = 20                                          # int,числовой
+temperature = 42.5                                           # float, дробний числовой
+login = "ivanov_ivan"                                        # str, строка текстовый
+notification_on = True                                       # bool, ответ на вопрос
+favorite_movies = ["Интерестеллар", "Человек-паук"]          # list, список, текстовый
+point = (3, 7)                                               # tuple, для текста, неизманный
+product_ids = {156, 228, 365, 228}                           # set (дубль уберётся), множество, колекция уник.. элементов
+capitals = {"Россия": "Москва", "Лос-Анджелес": "Ница"}      # dict, словарь, для данных
