@@ -1,6 +1,9 @@
-shopping_list = ["картошка", "масло", "мясо"]   
-shopping_list.append("хлебъ")                   
-print("shopping_list:", shopping_list)        
-
-unique_items = set(shopping_list)            
-print("unique_items:", unique_items)
+#создал список
+shopping_list = ["kartoshka", "smetana", "moloko"]
+ #добавил еще
+shopping_list.append( "pivo")
+#пишем
+print ("shoping_list:",shopping_list)
+#uniqe_item это типо список с uniq_item'ом, а uniqe_item это shope_list.append
+unique_items = set(shopping_list)
+print ("shoping_list:", unique_items)
