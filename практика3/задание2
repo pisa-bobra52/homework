@@ -1,0 +1,24 @@
+my_list = [1, 2, 3]
+print("Список до:", my_list)
+
+my_list[0] = 100
+print("Список после:", my_list)
+print("Вывод: список можно изменять, потому что это ИЗМЕНЯЕМЫЙ тип данных\n")
+
+# 2. КОРТЕЖ - неизменяемый
+my_tuple = (1, 2, 3)
+print("Кортеж:", my_tuple)
+
+
+# my_tuple[0] = 100
+print("Если раскомментировать строку кода, будет ошибка:")
+print("TypeError: 'tuple' object does not support item assignment")
+print("Вывод: кортеж НЕЛЬЗЯ изменять, он НЕИЗМЕНЯЕМЫЙ\n")
+
+my_string = "cat"
+print("Строка:", my_string)
+
+# my_string[0] = 'b'
+print("Если раскомментировать строку кода, будет ошибка:")
+print("TypeError: 'str' object does not support item assignment")
+print("Вывод: строку НЕЛЬЗЯ изменять, она НЕИЗМЕНЯЕМАЯ")
