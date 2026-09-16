@@ -1,16 +1,14 @@
-num1 = input("Введите первое число: ")
-num2 = input("Введите второе число: ")
+def get_number(prompt):
+    while True:
+        value = input(prompt)
+        try:
+            return int(value)
+        except ValueError:
+            print(f"Ошибка: '{value}' не является целым числом. Попробуйте ещё раз.")
 
-num1 = int(num1)
-num2 = int(num2)
+
+num1 = get_number("Введите первое число: ")
+num2 = get_number("Введите второе число: ")
 
 result = num1 + num2
-print("Результат:", num1, "+", num2, "=", result)
-
-
-
-
-# Пример:
-Введите первое число: 7
-Введите второе число: 5
-Сумма: 7 + 5 = 12
+print(f"Сумма: {num1} + {num2} = {result}")
