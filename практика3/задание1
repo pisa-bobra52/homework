@@ -8,20 +8,20 @@ g={'name': 'Alice', 'age': 30}
 h={7, 8, 9}
 i = None
 
-print('Type a is -', type(a))
+print("Переменная a:", a, "| тип:", type(a))
 
-print('Type b is -', type(b))
+print("Переменная b:", b, "| тип:", type(b))
 
-print('Type c is -', type(c))
+print("Переменная c:", c, "| тип:", type(c))
 
-print('Type d is -', type(d))
+print("Переменная d:", d, "| тип:", type(d))
 
-print('Type e is -', type(e))
+print("Переменная e:", e, "| тип:", type(e))
 
-print('Type f is -', type(f))
+print("Переменная f:", f, "| тип:", type(f))
 
-print('Type g is -', type(g))
+print("Переменная g:", g, "| тип:", type(g))
 
-print('Type h is -', type(h))
+print("Переменная h:", h, "| тип:", type(h))
 
-print('Type i is -', type(i))
+print("Переменная i:", i, "| тип:", type(i))
