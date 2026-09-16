@@ -10,7 +10,7 @@ my_tuple = (1, 2, 3)
 print("Кортеж:", my_tuple)
 
 
-my_tuple[0] = 100
+#my_tuple[0] = 100
 print("Если раскомментировать строку кода, будет ошибка:")
 print("TypeError: 'tuple' object does not support item assignment")
 print("Вывод: кортеж НЕЛЬЗЯ изменять, он НЕИЗМЕНЯЕМЫЙ\n")
