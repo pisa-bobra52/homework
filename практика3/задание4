@@ -1,0 +1,8 @@
+students_count = 20                                          # int
+temperature = 42.5                                           # float
+login = "ivanov_ivan"                                        # str
+notification_on = True                                       # bool
+favorite_movies = ["Интерестеллар", "Человек-паук"]          # list
+point = (3, 7)                                               # tuple
+product_ids = {156, 228, 365, 228}                           # set (дубль уберётся)
+capitals = {"Россия": "Москва", "Лос-Анджелес": "Ница"}      # dict
