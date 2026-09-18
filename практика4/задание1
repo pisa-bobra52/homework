@@ -1,0 +1,17 @@
+#база матх
+import math
+
+#число ввод
+x = float(input())
+
+#число пол
+floor_x = math.floor(x)
+
+#число потолка
+ceil_x = math.ceil(x)
+
+#сумма нижнего и верхнего числек
+result = floor_x + ceil_x
+
+#результат
+print(result)
