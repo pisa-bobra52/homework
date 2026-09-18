@@ -1,0 +1,22 @@
+import math
+
+#вводим координаты двух точек: x1, y1, x2, y2
+x1,x2 = float(input("x1:")), float(input("x2:"))
+y1,y2 = float(input("y1:")), float(input("y2:"))
+
+
+#разности координат по каждой оси
+deltax = x2 - x1
+deltay = y2 - y1
+
+#степени
+deltax2 = deltax ** 2
+deltay2 = deltay ** 2
+
+#сумма квадратов
+sum_of_squares = deltax2 + deltay2
+
+distance = math.sqrt(sum_of_squares)
+
+# результат
+print(distance)
