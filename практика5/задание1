@@ -1,0 +1,25 @@
+# налог 13%
+TAX_RATE = 0.13
+
+
+# функция расчета налога и вывода
+def calculate_tax(income):
+    """возвращает (доход, налог, доход с вычетом налога)."""
+    tax = income * TAX_RATE
+    net_income = income - tax
+    return income, tax, net_income
+
+
+# функцция вывода чкрез ффф сторки
+def print_result(income, tax, net_income):
+    print(f"общий доход : {income}")
+    print(f"сумма налога для вычета: {tax}")
+    print(f"общий доход после вычета налога: {net_income}")
+
+
+
+income = float(input())
+
+income, tax, net_income = calculate_tax(income)
+
+print_result(income, tax, net_income)
