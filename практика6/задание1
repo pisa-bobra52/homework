@@ -1,0 +1,14 @@
+temp = float(input("Введите свою температуру:"))
+outer = float(input("Введите свое давление:"))
+pulse = int(input("Введите свой пульс:"))
+
+if temp >= 36 and temp <= 37 and outer >= 110 and outer <= 130 and pulse >= 60 and pulse <= 100:
+    print("Нормальное состояние")
+
+elif ((35 <= temp <= 36) or (37<= temp <= 38) and
+    (105 <= outer <= 110) or (130 <= outer <= 140) and
+    (55 <= pulse <= 60) or ( 100 <= pulse <= 110)):
+    print("Легкое недомогание")
+
+else:
+    print("Требуется врач")
