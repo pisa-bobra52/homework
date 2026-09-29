@@ -1,0 +1,33 @@
+import random
+
+statys= input("введите статус вашег озаказа(в ожидании, в обработке, отправлено, доствалено, отменено):")
+
+match statys:
+    case "в ожидании":
+        name, emoji, stage, time = ("в ожидании", "⏳", "заказ ожидает подтверждения оплаты", (52, 67, "мин"))
+
+    case "в обработке":
+        name, emoji, stage, time = ("в обработке", "⚙️", "заказ собирается на складе", (1, 5, "ч"))
+
+    case "отправлено":
+        name, emoji, stage, time = ("отправлено", "📦", "заказ в пути к получателю", (1, 7, "дн."))
+
+    case "доствалено":
+        name, emoji, stage, time = ("доставлено", "✅", "заказ получен получателем", (0, 0, ""))
+
+    case "отменено":
+        name, emoji, stage, time = ("отменено",  "❌", "заказ отменён, обработка завершена", (0, 0, ""))
+
+    case _:
+        name = None
+
+if name is not None:
+    low, hight, unit = time
+    wait = "готово" if hight == 0 else f"{random.randint(low, hight)} {unit}"
+    print("=" * 30)
+    print(f"  статус заказа: {name} {emoji}")
+    print(f"  этап: {stage}")
+    print(f"  примерное время: {wait}")
+    print("=" * 30)
+else:
+    print("oшибка: неизвестный статус заказа.")
