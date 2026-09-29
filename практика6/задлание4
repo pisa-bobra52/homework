@@ -1,1 +1,6 @@
-можно я позже скину 4 задане сюда, я его еще не доделал
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
+
+print("YES" if abs(c1 - c2) == abs(r1 - r2) else "NO")
