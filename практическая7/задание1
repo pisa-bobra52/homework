@@ -1,1 +1,26 @@
+rating = int(input("введите рейтинг от 1 до 10: "))
 
+
+match rating:
+    case 9 | 10:
+        description = "отличный"
+        emoji = "👑"
+        advice = "рекомендую"
+    case 7 | 8:
+        description = "хороший"
+        emoji = "😎"
+        advice = "рекомендую"
+    case 4 | 5 | 6:
+        description = "средний"
+        emoji = "🤔"
+        advice = "можно попробовать"
+    case 1 | 2 | 3:
+        description = "плохой"
+        emoji = "💩"
+        advice = "не рекомендую"
+    case _:
+        print("ошибка: рейтинг должен быть от 1 до 10.")
+
+
+print(f"рейтинг {rating} — {description} {emoji}")
+print(f"рекомендация: {advice}")
