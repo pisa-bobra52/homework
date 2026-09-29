@@ -1,1 +1,26 @@
+amount = int(input("Введите сумму для снятия (кратную 100): "))
 
+b5000 = amount // 5000
+rest = amount % 5000
+
+b2000 = rest // 2000
+rest = rest % 2000
+
+b1000 = rest // 1000
+rest = rest % 1000
+
+b500 = rest // 500
+rest = rest % 500
+
+b200 = rest // 200
+rest = rest % 200
+
+b100 = rest // 100
+rest = rest % 100
+
+print(f"5000 x {b5000}")
+print(f"2000 x {b2000}")
+print(f"1000 x {b1000}")
+print(f"500 x {b500}")
+print(f"200 x {b200}")
+print(f"100 x {b100}")
