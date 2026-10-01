@@ -1,0 +1,7 @@
+chetnie_chisla = True
+
+for i in range (10):
+    num = int(input())
+    if num % 2 !=0:
+        chetnie_chisla = False
+print("yes" if chetnie_chisla else "no")
