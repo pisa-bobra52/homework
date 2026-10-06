@@ -1,0 +1,15 @@
+num1 = float(input("Ведите первое число:"))
+
+while True:
+    num2 = float(input("Введите второе число:"))
+    if num2 <= num1:
+        print("Ошибка, второе число должно быть больше первого")
+    else:
+        break
+while True:
+    num3 = float(input("Введите третье число:"))
+    if num3 <= num2:
+        print("Ошибка, третье число должно быть больше второго")
+    else:
+        break
+print("Последоавтельность принята!")
