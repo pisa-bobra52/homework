@@ -1,0 +1,10 @@
+password = "4590"
+
+while True:
+    parol = input("Ведите пароль:")
+
+    if parol == password:
+        print("пароль верный!")
+        break
+    else:
+        print("ошибка, попробуйте еще раз")
