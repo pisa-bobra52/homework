@@ -1,0 +1,23 @@
+digits = input()
+last_digit = digits[-1]
+
+count_three = len([ch for ch in digits if ch == '3'])#цифр 3
+count_last = len([ch for ch in digits if ch == last_digit])#последняя цифра
+count_even = len([ch for ch in digits if int(ch) % 2 == 0])#чётные
+sum_over_five = sum(int(ch) for ch in digits if int(ch) > 5)#+больших 5
+
+product_over_seven = 1
+count_over_seven = 0
+for ch in digits:
+    if int(ch) > 7:
+        product_over_seven *= int(ch)
+        count_over_seven += 1
+
+count_zero_five = len([ch for ch in digits if ch in '05'])#0 и 5 вместе
+
+print(count_three)
+print(count_last)
+print(count_even)
+print(sum_over_five)
+print(product_over_seven if count_over_seven else 1)
+print(count_zero_five)
