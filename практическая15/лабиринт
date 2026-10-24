@@ -1,0 +1,60 @@
+import random
+
+GRID_SIZE = 5
+CELLS_COUNT = 25
+ENTRY_SYMBOL = "н"
+EXIT_SYMBOL = "ф"
+player_hp = 100
+trap_dmg = 10
+enemy_dmg = 50
+
+FILL_SIMBOLS = "00001111лмз"
+
+elements = [random.choice(FILL_SIMBOLS) for i in range(CELLS_COUNT)]
+elements.append(ENTRY_SYMBOL)
+elements.append(EXIT_SYMBOL)
+
+random.shuffle(elements)
+
+maze_string = "".join(elements)
+
+print("Лабиринт:")
+print("\nВывод лабиринта:")
+
+for i in range(0, CELLS_COUNT, GRID_SIZE):
+    print(maze_string[i : i + GRID_SIZE ])
+emoji_map = {
+    "0": "⬜",
+    "1": "⬛",
+    "л": "🔷",
+    "м": "🟡",
+    "ф": "🟫",
+    "з": "🧟",
+    "н": "⭐",
+}
+print("\nЛабиринт с эмоджи:")
+for i in range(0, CELLS_COUNT, GRID_SIZE):
+    row = maze_string[i:i + GRID_SIZE]
+    print("".join(emoji_map.get(c, c) for c in row))
+
+entry_index = maze_string.index(ENTRY_SYMBOL)
+exit_index = maze_string.index(EXIT_SYMBOL)
+
+entry_row, entry_col = divmod(entry_index, GRID_SIZE)
+exit_row, exit_col = divmod(exit_index, GRID_SIZE)
+
+print(f"вход: строка {entry_row}, столбец {entry_col}")
+print(f"выход: строка {exit_row}, столбец {exit_col}")
+
+distance = abs(entry_row - exit_row) + abs(entry_col - exit_col)
+print(f"расстояние от входа до выхода:{distance} шагов")
+
+coins_count = maze_string.count("м")
+print(f"монеты: 🟡x{coins_count} ({"🟡" * coins_count})")
+
+damage = min(player_hp, maze_string.count("л") * trap_dmg + maze_string.count("з") * enemy_dmg)
+remaining_hp = player_hp - damage
+
+hearts = "♥" * (remaining_hp // 10) + "♡" * (damage // 10)
+print(f"здоровье: {remaining_hp} HP")
+print(f"итого: {hearts}")
